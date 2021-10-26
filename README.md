@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+Descrição:
+O banco da aplicação foi feito em MySQL dentro do XAMP com os dados fornecidos.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A rota da API foi criada no Laravel com PHP utilizando uma query para retornar todos os registros da tabela com um JSON.
 
-## Available Scripts
+O mapa foi criado utilizando componentes do https://react-leaflet.js.org/. Tive muitas dificildades com a documentação e erros que precisaram ser tratados, a fonte de informações foi prioritariamente no Stack overflow. Ao tentar puxar os dados da API tive um erro de CORS que não consegui contornar, tive que desativar o CORS do navegador. 
+![image](https://user-images.githubusercontent.com/79995091/138920457-30549403-b2a5-44d3-b88d-79127187de29.png)
+Notei também que apesar de ter testado a rota com o Postman a aplicação não estava puxando os dados da API mas sim direto do banco, o que gerava um array com as informações que ao tentar extrair os dados sempre retornavam como undefined. Logo não consegui tratar e utilizar os dados retornados.
+![image](https://user-images.githubusercontent.com/79995091/138920835-509d7792-9004-4b37-8361-6483c0c68f20.png)
 
-In the project directory, you can run:
+O marcador gerado foi adiconado manualmente.
+![image](https://user-images.githubusercontent.com/79995091/138920284-a524c9a8-44b5-4579-84be-14568c55d25a.png)
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+No diretório estão os dados do ReactJS, da pasta da API eu adicionei apenas o arquivo API.php onde tem a rota criada.
